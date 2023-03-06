@@ -8,18 +8,19 @@ import styled from 'styled-components';
 function Under_todo() {
     const reducer = useSelector((state)=> state.reducer);
     const param = useParams();
-    reducer.find((item) => item.id === parseInt(param.id))
+    const newObj = reducer.find((item) => item.id === +param.id)
+    console.log(newObj)
   return (
     <StTemplate>
         <StHeader>
-           ID : { reducer[param.id].id } 
+           ID : { newObj.id } 
             <Link to={`/`}>
                 <StItemBtn style={{ cursor: 'pointer' }}> <FaHome/> </StItemBtn>
             </Link>
         </StHeader>
         <StMain>
-            <StLabel> Title : { reducer[param.id].title }</StLabel>
-            <StLabel  style={{fontWeight : 'lighter'}}> To-do : { reducer[param.id].todo }</StLabel>
+            <StLabel> Title : { newObj.title }</StLabel>
+            <StLabel  style={{fontWeight : 'lighter'}}> To-do : { newObj.todo }</StLabel>
         </StMain>
     </StTemplate>
   )
@@ -28,6 +29,7 @@ function Under_todo() {
 const StTemplate = styled.div`
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 800px;
     max-width: 1200px;
     padding: 30px;
