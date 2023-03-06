@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'KorailRoundGothicBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    font-family: 'KorailRoundGothicBold';
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3b5998;
+    background: linear-gradient(to right, #ffffff, #3b5998);
+    background-repeat: no-repeat;
+    margin-top: 50%;
+    margin-bottom: 50%;
 }
