@@ -77,7 +77,7 @@ const StWrapper = styled.div`
     padding: 30px;
     border-radius: 10px;
     background: rgba(250, 250, 250, 0.8);
-    height: 100%;
+    height: 100vh;
 `
 const WorkingItemWrapper = styled.div`
     display: flex;
