@@ -14,6 +14,5 @@ body {
     background: #3b5998;
     background: linear-gradient(to right, #ffffff, #3b5998);
     background-repeat: no-repeat;
-    margin-top: 50%;
-    margin-bottom: 50%;
+    height: 100vh;
 }
